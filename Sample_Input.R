@@ -61,9 +61,10 @@ Iterations = 20
 #K_Num = 30 OR 100 OR 300
 #Max_Swarms = 2, 3 OR 4
 #beta_jump = 0 OR 5 OR 10
+#Samples = 96
 
-foreach (z=01:96, .packages = "tidyverse") %dopar% {
+foreach (z=01:Samples, .packages = "tidyverse") %dopar% {
   Run = Simulation(Iterations, K_Num, Max_Swarms)
-  filename = paste(paste("MN3W", sprintf("%02d", z), sep="_"), ".txt", sep= "")
+  filename = paste(paste("MN3W", sprintf("%03d", z), sep="_"), ".txt", sep= "")
   write.table(Run, filename, sep="\t", row.names = FALSE)
 }
