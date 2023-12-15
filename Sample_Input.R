@@ -1,5 +1,6 @@
 library(doParallel)
 library(foreach)
+library(tidyverse)
 
 source("Simulation.R")
 source("Growth_Rates.R")
