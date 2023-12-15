@@ -10,17 +10,11 @@ source("Mate_New_Queens.R")
 
 #source("Create_Unequal_Queens.R")
 #OR
-#source("Create_Queens.R")
-#OR
-#source("Create_Unequal_Queens_Completely_Random.R")
-#OR
-#source("Create_Queens_Completely_Random.R")
+#source("New_Queen_Fitness_Unlinked.R")
 
 #source("Carrying_Capacity_Random_NewFitness.R")
 #OR
 #source("Carrying_Capacity_Random.R")
-#OR
-#source("Carrying_Capacity.R")
 
 #source("Reproduce_NewFitness.R")
 #OR
@@ -28,7 +22,7 @@ source("Mate_New_Queens.R")
 
 #source("New_Queen_Fitness.R")
 #OR
-#source("New_Queen_Fitness_Completely_Random.R")
+#source("New_Queen_Fitness_Unlinked.R")
 
 Start_D = -1
 End_D = 1
