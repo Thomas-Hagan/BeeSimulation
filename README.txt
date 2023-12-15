@@ -61,6 +61,14 @@ Carrying_Capacity_Random_NewFitness.R
 Reproduce_NewFitness.R
 New_Queen_Fitness_Unlinked.R
 
+## Run Times
+
+Typical runtimes per single simulation vary between 30 minutes and 21 days depending on model inputs. Higher computational times result primarily from higher values of K_Num and the number of generations used. Typically, K_Num = 300 and Iterations = 20 resulted in a runtime of 16-7 days, although this time may vary on hardware and additional inputs (parameters include Max_swarms and beta_jump). It is HIGHLY recommended that each simulation is run in parallel.
+
+## Examples output
+
+Output files should typically have 14 columns, although may have more or less if sex allele number is deviated from 7. The first seven columsn of the output file should include the generation the colony is recorded in, the position of this colony in along the spatial dimension, the Age of the colonies queen, the fitness of the colony based on allelic makeup, a column labelled Average_Dist which should be recorded as being 0 in the output and is only used in calculations, and then the first and second allele of the colonies queen. Each subsequent column should include the number of males the queen mated with that contained that specific sex allele. A sample output file is given in this folder, named TEST_001.txt. This output file was run for 3 generations, and was run susing a sigmoid fitness function, K_Num = 30, Max_Swarms = 2 and beta_jump = 0.
+
 ## License
 
 Copyright (c) 2023 Thomas Hagan
