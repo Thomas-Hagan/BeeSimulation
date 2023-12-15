@@ -59,6 +59,6 @@ Iterations = 20
 
 foreach (z=01:Samples, .packages = "tidyverse") %dopar% {
   Run = Simulation(Iterations, K_Num, Max_Swarms)
-  filename = paste(paste("MN3W", sprintf("%03d", z), sep="_"), ".txt", sep= "")
+  filename = paste(paste("NAME", sprintf("%03d", z), sep="_"), ".txt", sep= "")
   write.table(Run, filename, sep="\t", row.names = FALSE)
 }
