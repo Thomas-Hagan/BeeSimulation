@@ -59,8 +59,8 @@ registerDoParallel(cores=detectCores())
 
 Iterations = 20
 #K_Num = 30 OR 100 OR 300
-Max_Swarms = 3
-beta_jump = 0.5*Max_Jump
+#Max_Swarms = 2, 3 OR 4
+#beta_jump = 0 OR 5 OR 10
 
 foreach (z=01:96, .packages = "tidyverse") %dopar% {
   Run = Simulation(Iterations, K_Num, Max_Swarms)
