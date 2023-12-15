@@ -74,5 +74,6 @@ Simulation <- function(Iterations, K_Num, Max_Swarms) {
   CurrentGen = CreateStore(t, Queens)
   StoredValues <- AddColoumn(StoredValues, CurrentGen, 7)
   StoredValues = StoreValue(StoredValues, CurrentGen)
+  StoredValues = StoredValues[,-5]
   return(StoredValues)
 }
