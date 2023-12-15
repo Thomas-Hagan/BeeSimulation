@@ -10,7 +10,7 @@ source("Mate_New_Queens.R")
 
 #source("Create_Unequal_Queens.R")
 #OR
-#source("New_Queen_Fitness_Unlinked.R")
+#source("Create_Unequal_Queens_Unlinked.R")
 
 #source("Carrying_Capacity_Random_NewFitness.R")
 #OR
